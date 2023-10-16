@@ -4,5 +4,6 @@ jobs:
   build:
     docker:
       - image: cimg/base:stable
+    parallelism: 30
     steps:
       - run: cat /proc/cpuinfo
